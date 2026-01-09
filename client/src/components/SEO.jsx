@@ -1,5 +1,4 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 const SEO = ({
   title = "Shakir Dmr - Full-Stack MERN Developer",
@@ -12,72 +11,58 @@ const SEO = ({
   const siteName = "Shakir Dmr Portfolio";
   const twitterHandle = "@shakirdmr";
 
-  return (
-    <Helmet>
-      {/* Basic meta tags */}
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="author" content="Shakir Dmr" />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={url} />
+  useEffect(() => {
+    // Set page title
+    document.title = title;
 
-      {/* Open Graph tags */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${url}${image}`} />
-      <meta property="og:url" content={url} />
-      <meta property="og:type" content={type} />
-      <meta property="og:site_name" content={siteName} />
+    // Function to set or update meta tag
+    const setMeta = (name, content, property = false) => {
+      const attribute = property ? 'property' : 'name';
+      let element = document.querySelector(`meta[${attribute}="${property ? name : name}"]`);
+      
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute(attribute, name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
 
-      {/* Twitter Card tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${url}${image}`} />
-      <meta name="twitter:creator" content={twitterHandle} />
+    // Set basic meta tags
+    setMeta('description', description);
+    setMeta('keywords', keywords);
+    setMeta('author', 'Shakir Dmr');
+    setMeta('robots', 'index, follow');
 
-      {/* Additional SEO tags */}
-      <meta name="theme-color" content="#10b981" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    // Set Open Graph tags
+    setMeta('og:title', title, true);
+    setMeta('og:description', description, true);
+    setMeta('og:image', `${url}${image}`, true);
+    setMeta('og:url', url, true);
+    setMeta('og:type', type, true);
+    setMeta('og:site_name', siteName, true);
 
-      {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Shakir Dmr",
-          "jobTitle": "Full-Stack MERN Developer",
-          "description": description,
-          "url": url,
-          "sameAs": [
-            "https://github.com/shakirdmr",
-            "https://x.com/shakirdmr",
-            "https://www.linkedin.com/in/shakirdmr/"
-          ],
-          "knowsAbout": [
-            "JavaScript",
-            "React",
-            "Node.js",
-            "MongoDB",
-            "Express.js",
-            "Full-Stack Development",
-            "Web Development"
-          ],
-          "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Full-Stack Developer",
-            "occupationLocation": {
-              "@type": "Country",
-              "name": "India"
-            }
-          }
-        })}
-      </script>
-    </Helmet>
-  );
+    // Set Twitter/X tags
+    setMeta('twitter:card', 'summary_large_image', true);
+    setMeta('twitter:title', title, true);
+    setMeta('twitter:description', description, true);
+    setMeta('twitter:image', `${url}${image}`, true);
+    setMeta('twitter:creator', twitterHandle, true);
+
+    // Set canonical link
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = url;
+
+    // Set viewport
+    setMeta('viewport', 'width=device-width, initial-scale=1.0');
+  }, [title, description, keywords, image, url, type, siteName, twitterHandle]);
+
+  return null;
 };
 
 export default SEO;
