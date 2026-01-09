@@ -28,7 +28,9 @@ const Experience = ({ theme }) => {
       <SectionHeader title="02. THE TRACK" icon={<Terminal size={16} />} theme={theme} />
       <div className={`relative border-l-2 ${theme.border} ml-3 md:ml-0 space-y-12 pl-8 md:pl-0 transition-colors duration-500`}>
         {experiences.map((exp, index) => (
-          <TimelineItem key={index} {...exp} theme={theme} />
+          <article key={index}>
+            <TimelineItem {...exp} theme={theme} />
+          </article>
         ))}
       </div>
     </section>

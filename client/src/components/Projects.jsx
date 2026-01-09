@@ -52,7 +52,9 @@ const Projects = ({ theme }) => {
       <SectionHeader title="01. LIVE PROJECTS" icon={<Globe size={16} />} theme={theme} />
       <div className="grid grid-cols-1 gap-6">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} theme={theme} />
+          <article key={index}>
+            <ProjectCard {...project} theme={theme} />
+          </article>
         ))}
       </div>
     </section>

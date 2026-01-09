@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { THEMES } from '../themes';
 
 const Home = () => {
@@ -26,7 +27,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen ${theme.bg} ${theme.text} font-sans transition-colors duration-500 ${theme.selection}`}>
+    <>
+      <SEO />
+      <div className={`min-h-screen ${theme.bg} ${theme.text} font-sans transition-colors duration-500 ${theme.selection}`}>
       {/* Background Grid Pattern */}
       <div className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none transition-all duration-500"
            style={{ backgroundImage: theme.bgPattern, backgroundSize: '30px 30px' }}>
@@ -61,6 +64,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

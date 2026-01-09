@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { THEMES } from '../themes';
 
 const ProjectsPage = () => {
@@ -22,7 +23,14 @@ const ProjectsPage = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen ${theme.bg} ${theme.text} font-sans transition-colors duration-500 ${theme.selection}`}>
+    <>
+      <SEO
+        title="Projects - Shakir Dmr Portfolio"
+        description="Explore my portfolio of full-stack MERN applications including SuperWaitlist, InvoiceGPT, ImageSmith, and more. Built with modern web technologies."
+        keywords="portfolio projects, MERN stack projects, React applications, Node.js projects, web development portfolio"
+        url="https://shakirdmr.dev/projects"
+      />
+      <div className={`min-h-screen ${theme.bg} ${theme.text} font-sans transition-colors duration-500 ${theme.selection}`}>
       {/* Background Grid Pattern */}
       <div className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none transition-all duration-500"
            style={{ backgroundImage: theme.bgPattern, backgroundSize: '30px 30px' }}>
@@ -58,6 +66,7 @@ const ProjectsPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -34,14 +34,14 @@ const Hero = ({ theme, isDark }) => {
 
         <div className="relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
+            <header>
               <h1 className={`text-4xl md:text-6xl font-bold ${theme.textHead} mb-2 tracking-tight`}>
                 7 Years<span className={theme.textAccent}>.</span>
               </h1>
               <p className={`${theme.text} max-w-md text-lg`}>
                 Full-stack MERN Developer. Building fast, practical digital products that scale.
               </p>
-            </div>
+            </header>
 
             {/* WebSocket Widget */}
             <div className="w-full md:w-auto">
