@@ -1,12 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Github, Sun, Moon } from 'lucide-react';
 
 const Header = ({ isDark, setIsDark, theme }) => {
   return (
     <header className={`flex justify-between items-center py-6 backdrop-blur-sm sticky top-0 z-50 ${theme.navBg} ${theme.border} border-b mb-12 transition-colors duration-500`}>
-      <div className="flex items-center gap-2">
-        <div className={`w-3 h-3 ${isDark ? 'bg-emerald-500' : 'bg-blue-600'} rounded-full animate-pulse`} />
-        <span className={`font-mono text-lg font-bold tracking-tighter ${theme.textHead}`}>/.shakirdmr</span>
+      <div className="flex items-center gap-6">
+        <Link to="/" className="flex items-center gap-2">
+          <div className={`w-3 h-3 ${isDark ? 'bg-emerald-500' : 'bg-blue-600'} rounded-full animate-pulse`} />
+          <span className={`font-mono text-lg font-bold tracking-tighter ${theme.textHead}`}>/.shakirdmr</span>
+        </Link>
+        <nav className="hidden md:flex gap-6">
+          <Link to="/" className={`font-mono text-sm ${theme.text} hover:${theme.textAccent} transition-colors`}>Home</Link>
+          <Link to="/projects" className={`font-mono text-sm ${theme.text} hover:${theme.textAccent} transition-colors`}>Projects</Link>
+        </nav>
       </div>
       <div className="flex items-center gap-4">
         <button
