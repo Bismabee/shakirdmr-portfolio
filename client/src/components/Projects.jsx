@@ -38,6 +38,14 @@ const Projects = ({ theme }) => {
       live: true
     },
     {
+      title: "SuperBitLegends",
+      type: "public",
+      desc: "A gaming platform with interactive gameplay and immersive user experience.",
+      tags: ['Next.js', 'Gaming', 'Web3'],
+      link: "https://superbitlegends.vercel.app/",
+      live: true
+    },
+    {
       title: "Unicon",
       type: "private",
       desc: "Scalable MERN application with role-based auth, real-time chat, and Redux state management.",
