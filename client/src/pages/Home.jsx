@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Technologies from '../components/Technologies';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
@@ -39,6 +40,8 @@ const Home = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6">
 
         <Hero theme={theme} isDark={isDark} />
+
+        <Technologies theme={theme} />
 
         <div className="space-y-24 relative pb-20">
 

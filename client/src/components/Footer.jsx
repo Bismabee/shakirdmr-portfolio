@@ -9,8 +9,8 @@ const Footer = ({ theme, isDark }) => {
         </p>
         <div className={`flex justify-center gap-6 text-sm font-mono opacity-70 transition-colors duration-500`}>
           <a href="mailto:shakirsjd@gmail.com" className="hover:opacity-100 transition-opacity">Email</a>
-          <a href="https://github.com/shakirsjd" target="_blank" rel="noreferrer" className="hover:opacity-100 transition-opacity">GitHub</a>
-          <a href="https://linkedin.com/in/shakirsjd" target="_blank" rel="noreferrer" className="hover:opacity-100 transition-opacity">LinkedIn</a>
+          <a href="https://github.com/shakirdmr" target="_blank" rel="noreferrer" className="hover:opacity-100 transition-opacity">GitHub</a>
+          <a href="https://linkedin.com/in/shakirsjdd" target="_blank" rel="noreferrer" className="hover:opacity-100 transition-opacity">LinkedIn</a>
         </div>
       </div>
 

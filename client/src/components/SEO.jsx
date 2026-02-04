@@ -72,8 +72,8 @@ const SEO = ({
       "jobTitle": "Backend-Focused Full Stack Developer",
       "url": url,
       "sameAs": [
-        "https://github.com/shakirsjd",
-        "https://linkedin.com/in/shakirsjd",
+        "https://github.com/shakirdmr",
+        "https://linkedin.com/in/shakirsjdd",
         "https://twitter.com/shakirsjd",
         "https://leetcode.com/u/shakirsjd"
       ],

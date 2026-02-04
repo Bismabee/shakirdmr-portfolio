@@ -23,44 +23,44 @@ const Hero = ({ theme, isDark }) => {
 
         <div className="relative z-10 text-center ">
           {/* Social Links - Main Attraction */}
-          <div className="mb-12 bg-amber-100 rounded-3xl py-5 border-amber-200">
-            <p className={`text-sm font-mono ${theme.textAccent} mb-6 tracking-widest uppercase opacity-80`}>Connect With Me</p>
-            <div className="flex items-center justify-center gap-6 md:gap-8">
+          <div className="mb-12 bg-amber-100 rounded-3xl py-4 md:py-5 px-4 md:px-6 border-amber-200 overflow-x-auto">
+            <p className={`text-sm font-mono ${theme.textAccent} mb-4 md:mb-6 tracking-widest uppercase opacity-80`}>Connect With Me</p>
+            <div className="flex items-center justify-center gap-3 md:gap-6 min-w-max md:min-w-0">
               <a 
-                href="https://github.com/shakirsjd" 
+                href="https://github.com/shakirdmr" 
                 target="_blank" 
                 rel="noreferrer"
-                className={`p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-white' : 'hover:bg-gray-100 text-gray-900'}`}
+                className={`p-2 md:p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-white' : 'hover:bg-gray-100 text-gray-900'}`}
                 title="GitHub"
               >
-                <Github size={36} />
+                <Github size={24} className="md:w-9 md:h-9" />
               </a>
               <a 
-                href="https://linkedin.com/in/shakirsjd" 
+                href="https://linkedin.com/in/shakirsjdd" 
                 target="_blank" 
                 rel="noreferrer"
-                className={`p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-blue-400' : 'hover:bg-gray-100 text-blue-600'}`}
+                className={`p-2 md:p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-blue-400' : 'hover:bg-gray-100 text-blue-600'}`}
                 title="LinkedIn"
               >
-                <Linkedin size={36} />
+                <Linkedin size={24} className="md:w-9 md:h-9" />
               </a>
               <a 
                 href="https://leetcode.com/u/shakirsjd" 
                 target="_blank" 
                 rel="noreferrer"
-                className={`p-4 rounded-xl transition-all hover:scale-125 font-bold ${isDark ? 'hover:bg-gray-800 text-yellow-500' : 'hover:bg-gray-100 text-yellow-600'}`}
+                className={`p-2 md:p-4 rounded-xl transition-all hover:scale-125 font-bold ${isDark ? 'hover:bg-gray-800 text-yellow-500' : 'hover:bg-gray-100 text-yellow-600'}`}
                 title="LeetCode"
               >
-                <Code2 size={36} />
+                <Code2 size={24} className="md:w-9 md:h-9" />
               </a>
               <a 
                 href="https://twitter.com/shakirsjd" 
                 target="_blank" 
                 rel="noreferrer"
-                className={`p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-blue-300' : 'hover:bg-gray-100 text-blue-500'}`}
+                className={`p-2 md:p-4 rounded-xl transition-all hover:scale-125 ${isDark ? 'hover:bg-gray-800 text-blue-300' : 'hover:bg-gray-100 text-blue-500'}`}
                 title="Twitter"
               >
-                <Twitter size={36} />
+                <Twitter size={24} className="md:w-9 md:h-9" />
               </a>
             </div>
           </div>

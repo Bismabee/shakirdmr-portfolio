@@ -9,13 +9,13 @@ const PingMeBar = ({ theme }) => {
           Ping Me At
         </span>
 
-        <a href="https://github.com/shakirsjd" target="_blank" rel="noreferrer" className={`${theme.text} hover:scale-110 transition-all hover:${theme.textHead}`}>
+        <a href="https://github.com/shakirdmr" target="_blank" rel="noreferrer" className={`${theme.text} hover:scale-110 transition-all hover:${theme.textHead}`}>
           <Github size={20} />
         </a>
         <a href="https://x.com/shakirsjd" target="_blank" rel="noreferrer" className={`${theme.text} hover:text-[#1DA1F2] hover:scale-110 transition-all`}>
           <Twitter size={20} />
         </a>
-        <a href="https://www.linkedin.com/in/shakirsjd/" target="_blank" rel="noreferrer" className={`${theme.text} hover:text-[#0A66C2] hover:scale-110 transition-all`}>
+        <a href="https://www.linkedin.com/in/shakirsjdd/" target="_blank" rel="noreferrer" className={`${theme.text} hover:text-[#0A66C2] hover:scale-110 transition-all`}>
           <Linkedin size={20} />
         </a>
       </div>
