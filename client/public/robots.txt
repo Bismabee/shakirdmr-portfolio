@@ -6,8 +6,13 @@ Disallow: /node_modules/
 Disallow: /src/
 Disallow: /.git/
 Disallow: /backup/
+Disallow: /vite-env.d.ts
 
 # Allow crawling of main content
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://shakirdmr.dev/sitemap.xml
 Allow: /
 Allow: /projects
 
