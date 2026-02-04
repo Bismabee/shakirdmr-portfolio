@@ -1,35 +1,26 @@
 import React from 'react';
-import { Zap } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 
 const Contact = ({ theme }) => {
   return (
     <section>
-      <SectionHeader title="03. HANDSHAKE" icon={<Zap size={16} />} theme={theme} />
-      <div className="bg-black border border-gray-800 rounded-lg p-6 font-mono text-sm shadow-2xl">
-        <div className="flex gap-2 mb-4">
-          <div className="w-3 h-3 rounded-full bg-red-500/50" />
-          <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-          <div className="w-3 h-3 rounded-full bg-green-500/50" />
-        </div>
-        <div className="space-y-4">
-          <div>
-            <span className="text-emerald-500">shakir@portfolio:~$</span>
-            <span className="text-white ml-2">./initiate_contact.sh</span>
-          </div>
-          <div className="text-gray-400">
-            Initializing communication protocol...<br/>
-            Email found: <span className="text-white hover:underline cursor-pointer">shakirsjd@gmail.com</span>
-          </div>
-          <div className="flex items-center gap-2 mt-4">
-            <span className="text-emerald-500">➜</span>
-            <input
-              type="text"
-              placeholder="Type message..."
-              className="bg-transparent border-none outline-none text-white w-full placeholder-gray-600 focus:ring-0"
-            />
-          </div>
-        </div>
+      <SectionHeader title="03. GET IN TOUCH" icon={<Mail size={16} />} theme={theme} />
+      <div className={`${theme.cardBg} border ${theme.cardBorder} rounded-2xl p-8 transition-colors duration-500`}>
+        <p className={`${theme.text} text-lg mb-6 leading-relaxed`}>
+          Open to freelance opportunities, collaborations, and interesting conversations. Let's build something amazing together.
+        </p>
+        <a 
+          href="mailto:shakirsjd@gmail.com"
+          className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-mono font-bold transition-all ${
+            theme.name === 'dark' 
+              ? 'bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 hover:text-emerald-300' 
+              : 'bg-blue-500/20 text-blue-600 hover:bg-blue-500/30 hover:text-blue-700'
+          }`}
+        >
+          <Mail size={20} />
+          shakirsjd@gmail.com
+        </a>
       </div>
     </section>
   );

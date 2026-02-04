@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import PingMeBar from '../components/PingMeBar';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
@@ -48,8 +47,6 @@ const Home = () => {
         <Header isDark={isDark} setIsDark={setIsDark} theme={theme} />
 
         <Hero theme={theme} isDark={isDark} />
-
-        <PingMeBar theme={theme} />
 
         <div className="space-y-24 relative pb-20">
 

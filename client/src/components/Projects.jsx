@@ -8,10 +8,18 @@ const Projects = ({ theme }) => {
     {
       title: "SuperWaitlist",
       type: "public",
-      desc: "Create a high-converting waitlist for any idea in seconds. Rapid deployment tool for indie hackers.",
-      tags: ['Next.js', 'MongoDB', 'SaaS'],
+      desc: "Backend-driven early access platform using Node.js and MongoDB. Designed REST APIs for email capture and admin workflows enabling fast onboarding and scalable data handling.",
+      tags: ['Node.js', 'MongoDB', 'REST APIs', 'SaaS'],
       link: "https://www.superwaitlist.xyz/",
       live: true
+    },
+    {
+      title: "SpaceSync",
+      type: "public",
+      desc: "Real-time chat application built with MERN stack. Backend powered by Node.js and Express with JWT authentication. Integrated with React frontend for scalable user communication.",
+      tags: ['MERN', 'Node.js', 'JWT', 'Real-time'],
+      link: "#",
+      live: false
     },
     {
       title: "InvoiceGPT",
@@ -36,22 +44,6 @@ const Projects = ({ theme }) => {
       tags: ['React', 'Tailwind', 'Agency'],
       link: "https://www.shitlabs.xyz/",
       live: true
-    },
-    {
-      title: "SuperBitLegends",
-      type: "public",
-      desc: "A gaming platform with interactive gameplay and immersive user experience.",
-      tags: ['Next.js', 'Gaming', 'Web3'],
-      link: "https://superbitlegends.vercel.app/",
-      live: true
-    },
-    {
-      title: "Unicon",
-      type: "private",
-      desc: "Scalable MERN application with role-based auth, real-time chat, and Redux state management.",
-      tags: ['MERN', 'Redux Toolkit', 'Socket.io'],
-      link: "#",
-      live: false
     }
   ];
 
