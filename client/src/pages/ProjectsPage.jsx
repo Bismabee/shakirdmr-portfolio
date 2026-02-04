@@ -7,7 +7,7 @@ import { THEMES } from '../themes';
 
 const ProjectsPage = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const theme = isDark ? THEMES.dark : THEMES.light;
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
         title="Projects - Shakir Dmr Portfolio"
         description="Explore my portfolio of full-stack MERN applications including SuperWaitlist, InvoiceGPT, ImageSmith, and more. Built with modern web technologies."
         keywords="portfolio projects, MERN stack projects, React applications, Node.js projects, web development portfolio"
-        url="https://shakirdmr.dev/projects"
+        url="https://shakirsjd.dev/projects"
       />
       <div className={`min-h-screen ${theme.bg} ${theme.text} font-sans transition-colors duration-500 ${theme.selection}`}>
       {/* Background Grid Pattern */}
@@ -61,10 +61,10 @@ const ProjectsPage = () => {
 
           <Projects theme={theme} />
 
-          <Footer theme={theme} isDark={isDark} />
-
         </div>
       </div>
+
+      <Footer theme={theme} isDark={isDark} />
     </div>
     </>
   );

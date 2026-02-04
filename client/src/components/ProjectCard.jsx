@@ -9,7 +9,7 @@ const ProjectCard = ({ title, type, desc, tags, link, live, theme }) => {
       href={isPrivate ? undefined : link}
       target={isPrivate ? undefined : "_blank"}
       rel="noreferrer"
-      className={`group relative block border ${theme.cardBg} ${isPrivate ? 'border-red-900/30' : theme.cardBorder} rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 ${isPrivate ? 'cursor-not-allowed' : 'cursor-pointer hover:border-gray-400'}`}
+      className={`group relative block ${theme.cardBg} ${theme.cardBorderGradient} ${isPrivate ? 'border-red-900/30' : ''} rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 ${isPrivate ? 'cursor-not-allowed' : 'cursor-pointer hover:border-gray-400'}`}
     >
       <div className="flex justify-between items-start mb-4">
         <div>

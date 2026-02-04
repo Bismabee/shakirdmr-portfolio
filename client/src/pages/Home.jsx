@@ -34,9 +34,9 @@ const Home = () => {
            style={{ backgroundImage: theme.bgPattern, backgroundSize: '30px 30px' }}>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
+      <Header isDark={isDark} setIsDark={setIsDark} theme={theme} />
 
-        <Header isDark={isDark} setIsDark={setIsDark} theme={theme} />
+      <div className="relative z-10 max-w-4xl mx-auto px-6">
 
         <Hero theme={theme} isDark={isDark} />
 
@@ -48,10 +48,10 @@ const Home = () => {
 
           <Contact theme={theme} />
 
-          <Footer theme={theme} isDark={isDark} />
-
         </div>
       </div>
+
+      <Footer theme={theme} isDark={isDark} />
     </div>
     </>
   );

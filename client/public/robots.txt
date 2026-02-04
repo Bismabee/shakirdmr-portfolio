@@ -12,9 +12,9 @@ Disallow: /vite-env.d.ts
 Crawl-delay: 1
 
 # Sitemap
-Sitemap: https://shakirdmr.dev/sitemap.xml
+Sitemap: https://shakirsjd.dev/sitemap.xml
 Allow: /
 Allow: /projects
 
 # Sitemap
-Sitemap: https://shakirdmr.dev/sitemap.xml
+Sitemap: https://shakirsjd.dev/sitemap.xml

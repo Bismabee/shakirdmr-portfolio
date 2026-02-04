@@ -6,7 +6,7 @@ const Contact = ({ theme }) => {
   return (
     <section>
       <SectionHeader title="03. GET IN TOUCH" icon={<Mail size={16} />} theme={theme} />
-      <div className={`${theme.cardBg} border ${theme.cardBorder} rounded-2xl p-8 transition-colors duration-500`}>
+      <div className={`${theme.cardBg} ${theme.cardBorderGradient} rounded-2xl p-8 transition-colors duration-500`}>
         <p className={`${theme.text} text-lg mb-6 leading-relaxed`}>
           Open to freelance opportunities, collaborations, and interesting conversations. Let's build something amazing together.
         </p>

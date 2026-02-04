@@ -5,11 +5,11 @@ const SEO = ({
   description = "Backend-focused full stack developer with 11+ years of coding experience. Specializing in Node.js, Express.js, MongoDB, and scalable REST APIs. Building production systems for thousands of users.",
   keywords = "backend developer, Node.js, Express.js, MongoDB, REST APIs, full-stack, JavaScript, web development, database design, software engineer",
   image = "/og-image.png",
-  url = "https://shakirdmr.dev",
+  url = "https://shakirsjd.dev",
   type = "website"
 }) => {
   const siteName = "Shakir Sajad - Developer Portfolio";
-  const twitterHandle = "@shakirdmr";
+  const twitterHandle = "@shakirsjd";
   const author = "Shakir Sajad";
 
   useEffect(() => {
@@ -72,10 +72,10 @@ const SEO = ({
       "jobTitle": "Backend-Focused Full Stack Developer",
       "url": url,
       "sameAs": [
-        "https://github.com/shakirdmr",
-        "https://linkedin.com/in/shakirdmr",
-        "https://twitter.com/shakirdmr",
-        "https://leetcode.com/u/shakirdmr"
+        "https://github.com/shakirsjd",
+        "https://linkedin.com/in/shakirsjd",
+        "https://twitter.com/shakirsjd",
+        "https://leetcode.com/u/shakirsjd"
       ],
       "email": "shakirsjd@gmail.com",
       "image": `${url}/avatar.jpg`,

@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* Gradient Border Styles */
+.gradient-border-dark {
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  background-image: linear-gradient(rgba(10, 10, 10, 1), rgba(10, 10, 10, 1)), linear-gradient(135deg, #10b981, #06b6d4);
+  background-origin: border;
+  background-clip: padding-box, border-box;
+}
+
+.gradient-border-light {
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  background-image: linear-gradient(rgba(249, 250, 251, 1), rgba(249, 250, 251, 1)), linear-gradient(135deg, #3b82f6, #2563eb);
+  background-origin: border;
+  background-clip: padding-box, border-box;
+}
