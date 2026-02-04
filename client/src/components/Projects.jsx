@@ -48,14 +48,16 @@ const Projects = ({ theme }) => {
   ];
 
   return (
-    <section className="relative">
-      <SectionHeader title="01. LIVE PROJECTS" icon={<Globe size={16} />} theme={theme} />
-      <div className="grid grid-cols-1 gap-6">
-        {projects.map((project, index) => (
-          <article key={index}>
-            <ProjectCard {...project} theme={theme} />
-          </article>
-        ))}
+    <section className={`relative -mx-6 px-6 py-12 md:py-16 ${theme.name === 'dark' ? 'bg-white/[0.02]' : 'bg-gray-900/[0.03]'} rounded-2xl`}>
+      <div className="max-w-4xl mx-auto">
+        <SectionHeader title="01. LIVE PROJECTS" icon={<Globe size={16} />} theme={theme} />
+        <div className="grid grid-cols-1 gap-6">
+          {projects.map((project, index) => (
+            <article key={index}>
+              <ProjectCard {...project} theme={theme} />
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
