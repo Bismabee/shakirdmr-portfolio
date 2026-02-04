@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Sun, Moon } from 'lucide-react';
+import { Github, Sun, Moon, FileText } from 'lucide-react';
 
 const Header = ({ isDark, setIsDark, theme }) => {
   return (
@@ -16,6 +16,15 @@ const Header = ({ isDark, setIsDark, theme }) => {
         </nav>
       </div>
       <div className="flex items-center gap-4">
+        <a 
+          href="/resume.pdf" 
+          target="_blank" 
+          rel="noreferrer"
+          className={`flex items-center gap-2 px-3 py-2 rounded-lg font-mono text-sm transition-colors ${isDark ? 'hover:bg-gray-800 text-emerald-400 hover:text-emerald-300' : 'hover:bg-gray-100 text-blue-600 hover:text-blue-700'}`}
+        >
+          <FileText size={18} />
+          CV
+        </a>
         <button
           onClick={() => setIsDark(!isDark)}
           className={`p-2 rounded-lg transition-colors ${isDark ? 'hover:bg-gray-800 text-yellow-400' : 'hover:bg-gray-100 text-gray-600'}`}
