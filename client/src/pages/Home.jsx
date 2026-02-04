@@ -34,14 +34,6 @@ const Home = () => {
            style={{ backgroundImage: theme.bgPattern, backgroundSize: '30px 30px' }}>
       </div>
 
-      {/* Progress Line */}
-      <div className={`fixed left-6 md:left-1/2 top-0 bottom-0 w-px ${theme.track} z-0 hidden sm:block transition-colors duration-500`}>
-        <div
-          className={`absolute top-0 left-0 w-full ${theme.trackFill} transition-all duration-100 ease-out`}
-          style={{ height: `${scrollProgress * 100}%`, boxShadow: isDark ? '0 0 10px rgba(16,185,129,0.5)' : 'none' }}
-        />
-      </div>
-
       <div className="relative z-10 max-w-4xl mx-auto px-6">
 
         <Header isDark={isDark} setIsDark={setIsDark} theme={theme} />
