@@ -10,7 +10,7 @@ import { THEMES } from '../themes';
 
 const Home = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const theme = isDark ? THEMES.dark : THEMES.light;
 
   useEffect(() => {
